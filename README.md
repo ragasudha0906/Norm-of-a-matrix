@@ -4,10 +4,27 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 ## Equipment’s required:
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
-## Algorithm:
-	1. Get the input matrix using np.array()   
-    2. Find the 2-norm of the matrix using np.linalg.norm()
-	3. Print the norm of the matrix in two decimal places.
+## Algorithm 1:
+1. Start and import the NumPy library using import numpy as np.
+2. Input the matrix elements from the user using mat = np.array(eval(input())).
+3. Compute the 1-Norm of the matrix using ans = np.linalg.norm(mat, 1).
+4. Format the result to two decimal places using Norm_of_matrix = "{:.2f}".format(ans).
+5. Display the formatted norm value using print(Norm_of_matrix) and Stop.
+## Algorithm2:
+
+1. Start and import the NumPy library using import numpy as np.
+2. Input the matrix elements from the user using mat = np.array(eval(input())).
+3.Compute the 2-norm of the matrix using ans = np.linalg.norm(mat, 2) — this gives the largest singular value (spectral norm).
+4. Format the result to two decimal places using Norm_of_matrix = "{:.2f}".format(ans).
+5. Display the formatted norm value using print(Norm_of_matrix) and Stop.
+
+## Algorithm 3:
+1. Start and import the NumPy library using import numpy as np.
+2. Input the matrix elements from the user using mat = np.array(eval(input())).
+3. Compute the infinity norm using ans = np.linalg.norm(mat, np.inf) — this finds the maximum absolute row sum of the matrix.
+4. Format the result to two decimal places using Norm_of_matrix = "{:.2f}".format(ans).
+5. Display the formatted norm value using print(Norm_of_matrix) and Stop.
+    
 ## Program:
 ```Python
 # Register No: RAGASUDHA R
